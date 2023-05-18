@@ -130,14 +130,14 @@ body {
 
 
 .message-form {
-    margin-top: -16px;
+    margin-top: -2%;
     background-color: rgb(3, 22, 49);
 
 }
 
 .message-form .message-label .message-text {
     width: 90%;
-    height: 55px;
+    height: 45px;
     background-color: rgb(3, 22, 49);
     color: white;
 
