@@ -43,7 +43,7 @@ let DATA = {
             last_seen: "last_seen",
             ownerMessage: [
                 {
-                    text:"Salom",
+                    text:"Qandaysan Ukajonim !!!",
                     owner: true
                 },
                 // {
@@ -232,27 +232,40 @@ let userPhoneNumber = document.querySelector(".phoneNumber")
 let foydalanuvchi_haqida = document.querySelector(".foydalanuvchi_haqida")
 let telefonRaqam = document.querySelector(".telefon_raqam")
 let idElement = document.querySelector(".id")
+let sitebar_telNumber = document.querySelector(".telefon_raqam")
 // let profileImage = document.querySelector(".profil-image")
 
 DATA.users.map((item) => {
     let createElementLi = document.createElement("li")
+    
 
+    let createProfilImg = document.createElement("img")
+    createProfilImg.setAttribute("src", "profile_image")
+    createProfilImg.setAttribute("alt", "profil_rasm")
+    createProfilImg.classList.add("profil-image")
+    document.body.appendChild(createProfilImg)
+
+    createProfilImg.src = item.profile_image
+    
     createElementLi.classList.add("user")
+
     createElementLi.textContent = item.name
 
     createElementLi.addEventListener("click", () => {
         messageList.textContent= ""
 
-        sitebar_right.textContent = item.birthday_year
+        sitebar_right.src = item.profile_image
+        sitebar_right.textContent = item.name
+        // sitebar_right.textContent = item.birthday_year
         // profileImage.textContent = item.profile_image
         idElement.textContent = item.id
         telefonRaqam.textContent = item.telephone_number
         foydalanuvchi_haqida.textContent = item.birthday_year
-        userPhoto.src = item.profile_image
         
         profile_name.textContent = item.name
         modalTitle.textContent = item.name
-        sitebar_right.textContent = item.name
+
+
         user_name.textContent = item.name
         item.ownerMessage.forEach(message => {
             let newMessageElement = document.createElement("li")
@@ -264,7 +277,8 @@ DATA.users.map((item) => {
         })
     })
 
+    createElementLi.appendChild(createProfilImg)
 
-    console.log(userPhoto);
+    console.log(createElementLi);
     contactList.appendChild(createElementLi)
 });

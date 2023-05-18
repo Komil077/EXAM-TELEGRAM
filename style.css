@@ -6,12 +6,22 @@ body {
 
 .leftSide {
     border: 1px solid black;
+    width: 25%;
+}
+
+.header-left {
+    background-color: rgb(3, 22, 49);
 }
 
 .leftSide .header-left .uch-nuqta img {
     cursor: pointer;
     width: 30px;
     height: 25px;
+}
+
+.leftSide .header-left .search {
+    background-color: rgb(3, 22, 49);
+    color: white;
 }
 
 .leftSide .header-left img {
@@ -22,19 +32,17 @@ body {
     cursor: pointer;
     transition: 0.5s;
 }
-.leftSide .header-left .offcanvas-body h4:hover {
-    color: blue;
-    transition: 0.5s;
-}
+
 
 .leftSide .header-left .offcanvas-body p {
     cursor: pointer;
-    border: 1px solid white;
+    border: none;
     padding: 15px 10px;
     transition: 0.3s;
 }
 .leftSide .header-left .offcanvas-body p:hover {
-    background-color: lightgray;
+    background-color: rgb(7, 46, 100);
+    border-radius: 10px;
     transition: 0.3s;
 }
 
@@ -42,16 +50,26 @@ body {
     width: 100%;
     height: 700px;
     overflow-y: scroll;
+    background-color: rgb(3, 22, 49);
 }
 
+
+
 .leftSide .user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    color: white;
+    column-gap: 25px;
     cursor: pointer;
     list-style-type: none;
-    padding: 30px 20px;
+    padding: 15px 20px;
+    font-size: 20px;
     transition: 0.3s;
 }
 .leftSide .user:hover {
-    background-color: lightgray;
+    background-color: rgb(4, 48, 111);
     transition: 0.3s;
 }
 
@@ -63,6 +81,11 @@ body {
 
 
 
+
+
+.rightSide {
+    width: 100%;
+}
 
 .rightSide .message input {
     width: 100%;
@@ -81,32 +104,48 @@ body {
 .header-right {
     cursor: pointer;
     border: 1px solid gray;
+    /* background-color: rgb(3, 22, 49); */
+    /* color: white; */
 }
 
+
+.header-right .profil-modal {
+    background-color: rgb(3, 22, 49);
+    color: white;
+}
 
 
 
 
 
 .rightSide .message-list {
-    height: 600px;
-    background: rgb(26,213,215);
-    background: linear-gradient(0deg, rgba(26,213,215,1) 0%, rgba(165,189,105,1) 60%, rgba(174,189,99,1) 64%, rgba(253,187,45,1) 100%);
+    height: 610px;
+    /* background: rgb(26,213,215);
+    background: linear-gradient(0deg, rgba(26,213,215,1) 0%, rgba(165,189,105,1) 60%, rgba(174,189,99,1) 64%, rgba(253,187,45,1) 100%); */
+    background-image: url(./img/7020215.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
 .message-form {
-    margin-top: -10px;
+    margin-top: -16px;
+    background-color: rgb(3, 22, 49);
+
 }
 
 .message-form .message-label .message-text {
     width: 90%;
     height: 55px;
+    background-color: rgb(3, 22, 49);
+    color: white;
+
     border: none;
 }
 
 .message-form .message-label .message-send {
-    background-color: white;
+    background-color: rgb(3, 22, 49);
     border: none;
 }
 
@@ -114,7 +153,7 @@ body {
     width: 40px;
     height: 40px;
     border: none;
-    background-color: white;
+    background-color: rgb(3, 22, 49);
 }
 
 .message-form .message-label a {
@@ -139,17 +178,18 @@ body {
     overflow-y: scroll;
 }
 
-
+/* 
 .message-list .accepted {
-    background-color: lightgreen;
+    background-color: rgb(3, 22, 49);
     padding: 1px 10px;
     margin-bottom: 10px;
     border-radius: 10px;
     width: 500px;
-}
+} */
 
 .message-list .sent {
-    background-color: white;
+    background-color: rgb(0, 150, 250);
+    color: white;
     padding: 1px 10px;
     border-radius: 10px;
     width: 500px;
@@ -162,10 +202,19 @@ body {
 }
 
 
+.sitebar-left {
+    background-color: rgb(3, 22, 49);
+    color: white;
+}
 
+.sitebar-right {
+    background-color: rgb(3, 22, 49);
+    color: white;
+}
 
 
 .sitebar_right {
+    width: 20%;
     display: flex;
     justify-content: center;
     font-size: 40px;
@@ -174,7 +223,8 @@ body {
 
 
 .owner {
-    background-color: lightgreen;
+    background-color: rgb(7, 46, 100);
+    color: white;
     padding: 10px 10px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -193,6 +243,12 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+}
+
+
+.header-right-div {
+    background-color: rgb(3, 22, 49);
+    color: white;
 }
 
 
