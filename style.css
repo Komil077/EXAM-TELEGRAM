@@ -119,7 +119,7 @@ body {
 
 
 .rightSide .message-list {
-    height: 610px;
+    height: 83vh;
     /* background: rgb(26,213,215);
     background: linear-gradient(0deg, rgba(26,213,215,1) 0%, rgba(165,189,105,1) 60%, rgba(174,189,99,1) 64%, rgba(253,187,45,1) 100%); */
     background-image: url(./img/7020215.jpg);
